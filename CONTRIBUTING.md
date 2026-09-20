@@ -10,7 +10,7 @@ Thanks for helping improve Gapwise. The ecosystem is split into focused reposito
 | Native Android experience, Android device integration or Android distribution | [`android`](https://github.com/Gapwise-for-UofT/android) |
 | Native iOS experience, Apple-platform integration or iOS distribution | [`ios`](https://github.com/Gapwise-for-UofT/ios) |
 | OAuth/MCP integration or delegated AI behavior | [`ai`](https://github.com/Gapwise-for-UofT/ai) |
-| UTM buildings, geometry, entrances, routing evidence, provenance, schemas or validation | [`data`](https://github.com/Gapwise-for-UofT/data) |
+| Campus buildings, geometry, entrances, routing evidence, provenance, schemas or validation | [`data`](https://github.com/Gapwise-for-UofT/data) |
 | Public developer documentation | [`docs`](https://github.com/Gapwise-for-UofT/docs) |
 | Status checks, incidents or service-health presentation | [`status`](https://github.com/Gapwise-for-UofT/status) |
 
@@ -18,7 +18,7 @@ For a missing or incorrect UTM entrance, prefer the visual [Gapwise Data entranc
 
 If a repository contains its own `CONTRIBUTING.md`, follow that more specific guidance.
 
-Gapwise timetable identity supports UTM, UTSG, UTSC, and mixed-campus schedules. The first-party map/routing/open-data layer is currently UTM-focused. Contributions should preserve that scope distinction instead of silently treating timetable coverage as map coverage.
+Gapwise timetable identity and web building maps support UTM, UTSG, UTSC, and mixed-campus schedules. Reviewed pedestrian routing, entrances, campus places, the public API, and the published raw-data snapshot currently cover UTM. Contributions should extend those evidence-backed layers deliberately rather than treating all campus capabilities as equivalent.
 
 ## Before opening an issue
 
@@ -56,7 +56,7 @@ The ecosystem follows a simple rule:
 
 In particular:
 
-- [`data`](https://github.com/Gapwise-for-UofT/data) owns shared public UTM campus facts;
+- [`data`](https://github.com/Gapwise-for-UofT/data) owns shared public University of Toronto campus facts;
 - the core [`gapwise`](https://github.com/Gapwise-for-UofT/gapwise) domain owns timetable/gap/routing semantics;
 - [`android`](https://github.com/Gapwise-for-UofT/android) implements the native Android experience without becoming a second source of canonical domain truth;
 - [`ios`](https://github.com/Gapwise-for-UofT/ios) implements the native iOS experience without becoming a second source of canonical domain truth;

@@ -24,10 +24,10 @@ Repository-local files take precedence when a component needs more specific inst
 | Native Android client and Android device integration | [`android`](https://github.com/Gapwise-for-UofT/android) |
 | Native iOS client and Apple-platform integration | [`ios`](https://github.com/Gapwise-for-UofT/ios) |
 | AI/MCP delegation boundary | [`ai`](https://github.com/Gapwise-for-UofT/ai) |
-| Public UTM campus facts, provenance and validation | [`data`](https://github.com/Gapwise-for-UofT/data) |
+| Public University of Toronto campus facts, provenance and validation | [`data`](https://github.com/Gapwise-for-UofT/data) |
 | Public developer documentation | [`docs`](https://github.com/Gapwise-for-UofT/docs) |
 | Independent service monitoring and incident communication | [`status`](https://github.com/Gapwise-for-UofT/status) |
 
-Timetable identity can span UTM, UTSG, UTSC, and mixed-campus schedules. The first-party campus map/routing/open-data layer is currently UTM-focused; organization documentation should keep those claims separate.
+Timetable identity and web building maps cover UTM, UTSG, UTSC, and mixed-campus schedules. Reviewed pedestrian routing, entrances, campus places, the public API, and the published raw-data snapshot currently cover UTM; organization documentation must describe that specific boundary without presenting Gapwise as a UTM product.
 
 For product information, visit [gapwise.ca](https://gapwise.ca). For developer documentation, visit [docs.gapwise.ca](https://docs.gapwise.ca).

@@ -6,7 +6,7 @@
 
 ### Make the time between classes count.
 
-**Privacy-first timetable intelligence for University of Toronto students, with a first-party campus map, routing, and open-data layer focused on UTM.**
+**Privacy-first timetable intelligence, campus maps, and day planning for students across the University of Toronto.**
 
 [![Open Gapwise](https://img.shields.io/badge/Open_Gapwise-gapwise.ca-4EA7FE?style=for-the-badge&labelColor=111820)](https://gapwise.ca)
 [![Documentation](https://img.shields.io/badge/Docs-docs.gapwise.ca-4EA7FE?style=for-the-badge&labelColor=111820)](https://docs.gapwise.ca)
@@ -26,7 +26,7 @@
 
 Gapwise turns a University of Toronto timetable into a model of the day around it: **what is next, how much usable time exists between classes, where a student can realistically go, when they need to leave, and how certain the underlying campus information is.**
 
-Timetable identity supports **UTM, UTSG, UTSC, and mixed-campus schedules**. The current first-party map, routing graph, campus-place data, and public data layer are **UTM-focused**. A St. George or Scarborough room stays source-backed rather than being falsely plotted onto the UTM map.
+Gapwise supports **UTM, UTSG, UTSC, and mixed-campus schedules**. The web campus explorer includes source-backed building identities and footprints for all three campuses. Reviewed pedestrian routing, entrances, campus places, the public API, and the currently published raw-data snapshot cover UTM; St. George and Scarborough locations remain in their own campus namespaces and are never plotted as UTM.
 
 The original ACORN calendar is parsed locally. Timetable arithmetic, routing, travel time, gap budgets, destination feasibility, and leave-by calculations are deterministic rather than delegated to a language model.
 
@@ -67,7 +67,7 @@ flowchart LR
     STATUS -. observes .-> AI
 ```
 
-**`gapwise` owns deterministic student-day semantics. `data` owns shared public UTM campus facts. `docs` documents released contracts. `status` observes public services. `android` and `ios` adapt canonical behavior to their platforms. `ai` consumes bounded context; it does not become a second timetable or routing engine.**
+**`gapwise` owns deterministic student-day semantics. `data` owns shared public University of Toronto campus facts. `docs` documents released contracts. `status` observes public services. `android` and `ios` adapt canonical behavior to their platforms. `ai` consumes bounded context; it does not become a second timetable or routing engine.**
 
 ## Engineering principles
 
