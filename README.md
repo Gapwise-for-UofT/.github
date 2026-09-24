@@ -31,3 +31,5 @@ Repository-local files take precedence when a component needs more specific inst
 Timetable identity and web building maps cover UTM, UTSG, UTSC, and mixed-campus schedules. Reviewed pedestrian routing, entrances, campus places, the public API, and the published raw-data snapshot currently cover UTM; organization documentation must describe that specific boundary without presenting Gapwise as a UTM product.
 
 For product information, visit [gapwise.ca](https://gapwise.ca). For developer documentation, visit [docs.gapwise.ca](https://docs.gapwise.ca).
+
+Original organization profile and community documentation are available under the [MIT License](LICENSE).
