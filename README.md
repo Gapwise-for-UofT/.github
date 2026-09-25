@@ -2,7 +2,7 @@
 
 This repository contains the public GitHub organization profile and shared community-health files for **Gapwise-for-UofT**.
 
-Gapwise currently has **seven first-party product repositories** — `gapwise`, `android`, `ios`, `ai`, `data`, `docs`, and `status` — plus this `.github` repository for organization-wide metadata and defaults.
+Gapwise has one canonical web application in `gapwise`, with `data`, `android`, `ios`, `ai`, `docs`, `status`, and `cli` serving distinct responsibilities. This `.github` repository owns organization-wide metadata and defaults. `carleton` and `carleton-data` remain transitional reference repositories.
 
 ## What lives here
 
@@ -24,7 +24,8 @@ Repository-local files take precedence when a component needs more specific inst
 | Native Android client and Android device integration | [`android`](https://github.com/Gapwise-for-UofT/android) |
 | Native iOS client and Apple-platform integration | [`ios`](https://github.com/Gapwise-for-UofT/ios) |
 | AI/MCP delegation boundary | [`ai`](https://github.com/Gapwise-for-UofT/ai) |
-| Public University of Toronto campus facts, provenance and validation | [`data`](https://github.com/Gapwise-for-UofT/data) |
+| Public campus facts, provenance and validation | [`data`](https://github.com/Gapwise-for-UofT/data) |
+| University integration scaffolding and validation | [`cli`](https://github.com/Gapwise-for-UofT/cli) |
 | Public developer documentation | [`docs`](https://github.com/Gapwise-for-UofT/docs) |
 | Independent service monitoring and incident communication | [`status`](https://github.com/Gapwise-for-UofT/status) |
 
