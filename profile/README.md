@@ -6,7 +6,7 @@
 
 ### Make the time between classes count.
 
-**Privacy-first timetable intelligence, campus maps, and day planning for students across the University of Toronto.**
+**Privacy-first timetable intelligence, campus maps, and day planning in one application for multiple universities.**
 
 [![Open Gapwise](https://img.shields.io/badge/Open_Gapwise-gapwise.ca-4EA7FE?style=for-the-badge&labelColor=111820)](https://gapwise.ca)
 [![Documentation](https://img.shields.io/badge/Docs-docs.gapwise.ca-4EA7FE?style=for-the-badge&labelColor=111820)](https://docs.gapwise.ca)
@@ -28,6 +28,8 @@ Gapwise turns a University of Toronto timetable into a model of the day around i
 
 Gapwise supports **UTM, UTSG, UTSC, and mixed-campus schedules**. The web campus explorer includes source-backed building identities and footprints for all three campuses. Reviewed pedestrian routing, entrances, campus places, the public API, and the currently published raw-data snapshot cover UTM; St. George and Scarborough locations remain in their own campus namespaces and are never plotted as UTM.
 
+The shared web application also contains Carleton timetable and campus adapters. Carleton deployment is being verified; its standalone application and data repositories remain available as migration references and rollback sources. New universities use the same app through a manifest, timetable adapter, and reviewed campus data.
+
 The original ACORN calendar is parsed locally. Timetable arithmetic, routing, travel time, gap budgets, destination feasibility, and leave-by calculations are deterministic rather than delegated to a language model.
 
 ## The ecosystem
@@ -38,7 +40,8 @@ The original ACORN calendar is parsed locally. Timetable arithmetic, routing, tr
 | **[`android`](https://github.com/Gapwise-for-UofT/android)** | Native Kotlin + Jetpack Compose Android implementation and Android integration | Android |
 | **[`ios`](https://github.com/Gapwise-for-UofT/ios)** | Native Swift + SwiftUI iOS implementation and Apple-platform integration | iOS |
 | **[`ai`](https://github.com/Gapwise-for-UofT/ai)** | OAuth/MCP boundary for explicitly delegated student context and bounded AI actions | [ai.gapwise.ca](https://ai.gapwise.ca) |
-| **[`data`](https://github.com/Gapwise-for-UofT/data)** | Canonical public University of Toronto campus data, provenance, schemas, validation, and distribution | [data.gapwise.ca](https://data.gapwise.ca) |
+| **[`data`](https://github.com/Gapwise-for-UofT/data)** | Canonical public campus data, provenance, schemas, validation, and distribution | [data.gapwise.ca](https://data.gapwise.ca) |
+| **[`cli`](https://github.com/Gapwise-for-UofT/cli)** | Repeatable university scaffolding, validation, and local development | Developer tool |
 | **[`docs`](https://github.com/Gapwise-for-UofT/docs)** | Public developer documentation for APIs, SDKs, data, security, native integration, and AI/MCP | [docs.gapwise.ca](https://docs.gapwise.ca) |
 | **[`status`](https://github.com/Gapwise-for-UofT/status)** | Independent service-health monitoring and incident communication | [status.gapwise.ca](https://status.gapwise.ca) |
 
@@ -58,7 +61,7 @@ flowchart LR
     I --> C
     AI --> C
 
-    C --> D[Canonical University of Toronto campus data]
+    C --> D[Canonical multi-university campus data]
     AI --> D
 
     DOCS[Documentation] -. describes .-> C
@@ -67,7 +70,7 @@ flowchart LR
     STATUS -. observes .-> AI
 ```
 
-**`gapwise` owns deterministic student-day semantics. `data` owns shared public University of Toronto campus facts. `docs` documents released contracts. `status` observes public services. `android` and `ios` adapt canonical behavior to their platforms. `ai` consumes bounded context; it does not become a second timetable or routing engine.**
+**`gapwise` owns deterministic student-day semantics and the single web application. `data` owns shared public campus facts. `cli` scaffolds integrations. `docs` documents released contracts. `status` observes public services. `android` and `ios` adapt canonical behavior to their platforms. `ai` consumes bounded context; it does not become a second timetable or routing engine.**
 
 ## Engineering principles
 
