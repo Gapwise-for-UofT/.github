@@ -24,13 +24,13 @@
 
 ---
 
-Gapwise turns a University of Toronto timetable into a model of the day around it: **what is next, how much usable time exists between classes, where a student can realistically go, when they need to leave, and how certain the underlying campus information is.**
+Gapwise turns a university timetable into a model of the day around it: **what is next, how much usable time exists between classes, where a student can realistically go, when they need to leave, and how certain the underlying campus information is.**
 
-Gapwise supports **UTM, UTSG, UTSC, and mixed-campus schedules**. The web campus explorer includes source-backed building identities and footprints for all three campuses. Reviewed pedestrian routing, entrances, campus places, the public API, and the currently published raw-data snapshot cover UTM; St. George and Scarborough locations remain in their own campus namespaces and are never plotted as UTM.
+Gapwise supports **five universities** — University of Toronto (UTM, UTSG, UTSC), Carleton University, Toronto Metropolitan University, Queen's University, and Wilfrid Laurier University — from one canonical web application. Each university provides its own timetable adapter, campus data, and branding config. The shared app, routing engine, gap planner, and UI are not duplicated.
 
-The shared web application also contains Carleton timetable and campus adapters. Carleton deployment is being verified; its standalone application and data repositories remain available as migration references and rollback sources. New universities use the same app through a manifest, timetable adapter, and reviewed campus data.
+The web campus explorer includes source-backed building identities and footprints for all supported universities. Reviewed pedestrian routing, verified entrances, campus places, the public API, and the currently published raw-data snapshot are most complete for UTM; other campuses continue to expand.
 
-The original ACORN calendar is parsed locally. Timetable arithmetic, routing, travel time, gap budgets, destination feasibility, and leave-by calculations are deterministic rather than delegated to a language model.
+Timetable files are parsed locally in the browser. Arithmetic, routing, travel time, gap budgets, destination feasibility, and leave-by calculations are deterministic rather than delegated to a language model.
 
 ## The ecosystem
 
@@ -106,7 +106,7 @@ Campus facts and routing evidence belong in **[`data`](https://github.com/Gapwis
 
 <div align="center">
 
-**Independent student software. Not affiliated with or endorsed by the University of Toronto.**
+**Independent student software. Not affiliated with or endorsed by the University of Toronto, Carleton University, Toronto Metropolitan University, Queen's University, or Wilfrid Laurier University.**
 
 <br />
 
