@@ -2,7 +2,7 @@
 
 This repository contains the public GitHub organization profile and shared community-health files for **Gapwise**.
 
-Gapwise has one canonical web application in `gapwise`, with `data`, `android`, `ios`, `ai`, `docs`, `status`, and `cli` serving distinct responsibilities. This `.github` repository owns organization-wide metadata and defaults. `carleton` and `carleton-data` are archived, read-only reference repositories whose functionality has been fully consolidated into `gapwise` and `data`.
+Gapwise has one canonical web application in `gapwise`, with `data`, `android`, `ios`, `ai`, `docs`, `status`, and `cli` serving distinct responsibilities across all supported universities. This `.github` repository owns organization-wide metadata and defaults.
 
 ## What lives here
 
