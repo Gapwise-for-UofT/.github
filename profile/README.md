@@ -26,21 +26,25 @@
 
 Gapwise turns a university timetable into a model of the day around it: **what is next, how much usable time exists between classes, where a student can realistically go, when they need to leave, and how certain the underlying campus information is.**
 
-Gapwise supports **seven universities** across Canada from one canonical web application:
+Gapwise supports **eleven universities** across Canada from one canonical web application:
 
 | University | Edition | Scope | Timetable Source |
 | --- | --- | --- | --- |
-| **University of Toronto** | [gapwise.ca](https://gapwise.ca) | UTM, St. George, Scarborough | ACORN calendar export (`.ics`) |
+| **University of Toronto** | [gapwise.ca](https://gapwise.ca) | Mississauga, St. George, Scarborough | ACORN calendar export (`.ics`) |
 | **Carleton University** | [carleton.gapwise.ca](https://carleton.gapwise.ca) | Ottawa campus | Carleton Central schedule text & `.ics` |
 | **Toronto Metropolitan University** | [tmu.gapwise.ca](https://tmu.gapwise.ca) | Downtown Toronto campus | MyServiceHub (RAMSS) & Google Calendar |
 | **Queen's University** | [queens.gapwise.ca](https://queens.gapwise.ca) | Kingston campus | SOLUS Student Center subscription & text |
 | **Wilfrid Laurier University** | [laurier.gapwise.ca](https://laurier.gapwise.ca) | Waterloo campus | LORIS Detail Schedule & MyLS |
 | **York University** | [york.gapwise.ca](https://york.gapwise.ca) | Keele campus | VSB / REM timetable & `.ics` |
 | **McMaster University** | [mcmaster.gapwise.ca](https://mcmaster.gapwise.ca) | Hamilton campus | Mosaic Timetable & Outlook Calendar |
+| **Western University** | [western.gapwise.ca](https://western.gapwise.ca) | London campus | Student Center schedule text & `.ics` |
+| **University of Guelph** | [guelph.gapwise.ca](https://guelph.gapwise.ca) | Guelph campus | WebAdvisor schedule text & `.ics` |
+| **University of Ottawa** | [uottawa.gapwise.ca](https://uottawa.gapwise.ca) | Downtown Ottawa campus | uoCampus schedule text & `.ics` |
+| **Brock University** | [brock.gapwise.ca](https://brock.gapwise.ca) | St. Catharines campus | BrockDB / Student Portal text & `.ics` |
 
 Each university provides its own timetable adapter, campus data model, and branding configuration. The shared application, pedestrian routing, gap planner, and UI are not duplicated.
 
-The web campus explorer includes source-backed building identities and footprints for all 7 supported universities. Reviewed pedestrian routing is available for UTM, Carleton, TMU, Queen's, Laurier, York, and McMaster.
+The web campus explorer includes source-backed building identities and footprints for all 11 supported universities. Reviewed pedestrian routing is available for UTM, Carleton, TMU, Queen's, Laurier, York, McMaster, Western, Guelph, uOttawa, and Brock.
 
 Timetable files are parsed locally in the browser. Arithmetic, routing, travel time, gap budgets, destination feasibility, and leave-by calculations are deterministic rather than delegated to a language model.
 
