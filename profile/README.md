@@ -26,9 +26,21 @@
 
 Gapwise turns a university timetable into a model of the day around it: **what is next, how much usable time exists between classes, where a student can realistically go, when they need to leave, and how certain the underlying campus information is.**
 
-Gapwise supports **five universities** — University of Toronto (UTM, UTSG, UTSC), Carleton University, Toronto Metropolitan University, Queen's University, and Wilfrid Laurier University — from one canonical web application. Each university provides its own timetable adapter, campus data, and branding config. The shared app, routing engine, gap planner, and UI are not duplicated.
+Gapwise supports **seven universities** across Canada from one canonical web application:
 
-The web campus explorer includes source-backed building identities and footprints for all supported universities. Reviewed pedestrian routing, verified entrances, campus places, the public API, and the currently published raw-data snapshot are most complete for UTM; other campuses continue to expand.
+| University | Edition | Scope | Timetable Source |
+| --- | --- | --- | --- |
+| **University of Toronto** | [gapwise.ca](https://gapwise.ca) | UTM, St. George, Scarborough | ACORN calendar export (`.ics`) |
+| **Carleton University** | [carleton.gapwise.ca](https://carleton.gapwise.ca) | Ottawa campus | Carleton Central schedule text & `.ics` |
+| **Toronto Metropolitan University** | [tmu.gapwise.ca](https://tmu.gapwise.ca) | Downtown Toronto campus | MyServiceHub (RAMSS) & Google Calendar |
+| **Queen's University** | [queens.gapwise.ca](https://queens.gapwise.ca) | Kingston campus | SOLUS Student Center subscription & text |
+| **Wilfrid Laurier University** | [laurier.gapwise.ca](https://laurier.gapwise.ca) | Waterloo campus | LORIS Detail Schedule & MyLS |
+| **York University** | [york.gapwise.ca](https://york.gapwise.ca) | Keele campus | VSB / REM timetable & `.ics` |
+| **McMaster University** | [mcmaster.gapwise.ca](https://mcmaster.gapwise.ca) | Hamilton campus | Mosaic Timetable & Outlook Calendar |
+
+Each university provides its own timetable adapter, campus data model, and branding configuration. The shared application, pedestrian routing, gap planner, and UI are not duplicated.
+
+The web campus explorer includes source-backed building identities and footprints for all 7 supported universities. Reviewed pedestrian routing is available for UTM, Carleton, TMU, Queen's, Laurier, York, and McMaster.
 
 Timetable files are parsed locally in the browser. Arithmetic, routing, travel time, gap budgets, destination feasibility, and leave-by calculations are deterministic rather than delegated to a language model.
 
@@ -106,7 +118,7 @@ Campus facts and routing evidence belong in **[`data`](https://github.com/Gapwis
 
 <div align="center">
 
-**Independent student software. Not affiliated with or endorsed by the University of Toronto, Carleton University, Toronto Metropolitan University, Queen's University, or Wilfrid Laurier University.**
+**Independent student software. Not affiliated with or endorsed by the University of Toronto, Carleton University, Toronto Metropolitan University, Queen's University, Wilfrid Laurier University, York University, or McMaster University.**
 
 <br />
 

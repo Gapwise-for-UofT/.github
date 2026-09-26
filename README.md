@@ -2,7 +2,7 @@
 
 This repository contains the public GitHub organization profile and shared community-health files for **Gapwise**.
 
-Gapwise has one canonical web application in `gapwise`, with `data`, `android`, `ios`, `ai`, `docs`, `status`, and `cli` serving distinct responsibilities. This `.github` repository owns organization-wide metadata and defaults. `carleton` and `carleton-data` remain transitional reference repositories.
+Gapwise has one canonical web application in `gapwise`, with `data`, `android`, `ios`, `ai`, `docs`, `status`, and `cli` serving distinct responsibilities. This `.github` repository owns organization-wide metadata and defaults. `carleton` and `carleton-data` are archived, read-only reference repositories whose functionality has been fully consolidated into `gapwise` and `data`.
 
 ## What lives here
 
@@ -29,7 +29,7 @@ Repository-local files take precedence when a component needs more specific inst
 | Public developer documentation | [`docs`](https://github.com/GapwiseHQ/docs) |
 | Independent service monitoring and incident communication | [`status`](https://github.com/GapwiseHQ/status) |
 
-Timetable identity and web building maps cover UTM, UTSG, UTSC, and mixed-campus schedules. Reviewed pedestrian routing, entrances, campus places, the public API, and the published raw-data snapshot currently cover UTM; organization documentation must describe that specific boundary without presenting Gapwise as a UTM product.
+Gapwise provides dedicated editions for 7 universities across Canada: University of Toronto ([gapwise.ca](https://gapwise.ca)), Carleton University ([carleton.gapwise.ca](https://carleton.gapwise.ca)), Toronto Metropolitan University ([tmu.gapwise.ca](https://tmu.gapwise.ca)), Queen's University ([queens.gapwise.ca](https://queens.gapwise.ca)), Wilfrid Laurier University ([laurier.gapwise.ca](https://laurier.gapwise.ca)), York University ([york.gapwise.ca](https://york.gapwise.ca)), and McMaster University ([mcmaster.gapwise.ca](https://mcmaster.gapwise.ca)).
 
 For product information, visit [gapwise.ca](https://gapwise.ca). For developer documentation, visit [docs.gapwise.ca](https://docs.gapwise.ca).
 
