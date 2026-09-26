@@ -4,7 +4,7 @@
 
 # Gapwise
 
-### Make the time between classes count.
+### Free and open-source university timetable, campus navigation, and campus data infrastructure for students across Canada.
 
 **Privacy-first timetable intelligence, campus maps, and day planning in one application for multiple universities.**
 
@@ -14,7 +14,7 @@
 
 <br />
 
-**[Gapwise](https://gapwise.ca)** · **[Android](https://github.com/Gapwise-for-UofT/android)** · **[iOS](https://github.com/Gapwise-for-UofT/ios)** · **[AI](https://ai.gapwise.ca)** · **[Data](https://data.gapwise.ca)** · **[Docs](https://docs.gapwise.ca)** · **[Status](https://status.gapwise.ca)**
+**[Gapwise](https://gapwise.ca)** · **[Android](https://github.com/GapwiseHQ/android)** · **[iOS](https://github.com/GapwiseHQ/ios)** · **[AI](https://ai.gapwise.ca)** · **[Data](https://data.gapwise.ca)** · **[Docs](https://docs.gapwise.ca)** · **[Status](https://status.gapwise.ca)**
 
 <br />
 
@@ -36,16 +36,16 @@ Timetable files are parsed locally in the browser. Arithmetic, routing, travel t
 
 | Repository | Owns | Surface |
 | --- | --- | --- |
-| **[`gapwise`](https://github.com/Gapwise-for-UofT/gapwise)** | Core web/PWA, canonical timetable/gap/routing semantics, public API, OpenAPI, and SDK source | [gapwise.ca](https://gapwise.ca) · [api.gapwise.ca](https://api.gapwise.ca/v1) |
-| **[`android`](https://github.com/Gapwise-for-UofT/android)** | Native Kotlin + Jetpack Compose Android implementation and Android integration | Android |
-| **[`ios`](https://github.com/Gapwise-for-UofT/ios)** | Native Swift + SwiftUI iOS implementation and Apple-platform integration | iOS |
-| **[`ai`](https://github.com/Gapwise-for-UofT/ai)** | OAuth/MCP boundary for explicitly delegated student context and bounded AI actions | [ai.gapwise.ca](https://ai.gapwise.ca) |
-| **[`data`](https://github.com/Gapwise-for-UofT/data)** | Canonical public campus data, provenance, schemas, validation, and distribution | [data.gapwise.ca](https://data.gapwise.ca) |
-| **[`cli`](https://github.com/Gapwise-for-UofT/cli)** | Repeatable university scaffolding, validation, and local development | Developer tool |
-| **[`docs`](https://github.com/Gapwise-for-UofT/docs)** | Public developer documentation for APIs, SDKs, data, security, native integration, and AI/MCP | [docs.gapwise.ca](https://docs.gapwise.ca) |
-| **[`status`](https://github.com/Gapwise-for-UofT/status)** | Independent service-health monitoring and incident communication | [status.gapwise.ca](https://status.gapwise.ca) |
+| **[`gapwise`](https://github.com/GapwiseHQ/gapwise)** | Core web/PWA, canonical timetable/gap/routing semantics, public API, OpenAPI, and SDK source | [gapwise.ca](https://gapwise.ca) · [api.gapwise.ca](https://api.gapwise.ca/v1) |
+| **[`android`](https://github.com/GapwiseHQ/android)** | Native Kotlin + Jetpack Compose Android implementation and Android integration | Android |
+| **[`ios`](https://github.com/GapwiseHQ/ios)** | Native Swift + SwiftUI iOS implementation and Apple-platform integration | iOS |
+| **[`ai`](https://github.com/GapwiseHQ/ai)** | OAuth/MCP boundary for explicitly delegated student context and bounded AI actions | [ai.gapwise.ca](https://ai.gapwise.ca) |
+| **[`data`](https://github.com/GapwiseHQ/data)** | Canonical public campus data, provenance, schemas, validation, and distribution | [data.gapwise.ca](https://data.gapwise.ca) |
+| **[`cli`](https://github.com/GapwiseHQ/cli)** | Repeatable university scaffolding, validation, and local development | Developer tool |
+| **[`docs`](https://github.com/GapwiseHQ/docs)** | Public developer documentation for APIs, SDKs, data, security, native integration, and AI/MCP | [docs.gapwise.ca](https://docs.gapwise.ca) |
+| **[`status`](https://github.com/GapwiseHQ/status)** | Independent service-health monitoring and incident communication | [status.gapwise.ca](https://status.gapwise.ca) |
 
-Organization-wide contribution, security, support, and issue defaults live in **[`.github`](https://github.com/Gapwise-for-UofT/.github)**.
+Organization-wide contribution, security, support, and issue defaults live in **[`.github`](https://github.com/GapwiseHQ/.github)**.
 
 ### One source of truth per responsibility
 
@@ -98,9 +98,9 @@ flowchart LR
 
 ## Contributing
 
-Choose the repository that owns the behavior you want to change. Shared contribution, security, support, and pull-request guidance lives in this organization's [`.github`](https://github.com/Gapwise-for-UofT/.github) repository and is inherited by repositories that do not provide a more specific policy.
+Choose the repository that owns the behavior you want to change. Shared contribution, security, support, and pull-request guidance lives in this organization's [`.github`](https://github.com/GapwiseHQ/.github) repository and is inherited by repositories that do not provide a more specific policy.
 
-Campus facts and routing evidence belong in **[`data`](https://github.com/Gapwise-for-UofT/data)**. Product behavior belongs in **[`gapwise`](https://github.com/Gapwise-for-UofT/gapwise)**. Android-specific implementation belongs in **[`android`](https://github.com/Gapwise-for-UofT/android)**. iOS-specific implementation belongs in **[`ios`](https://github.com/Gapwise-for-UofT/ios)**. Public documentation belongs in **[`docs`](https://github.com/Gapwise-for-UofT/docs)**. Keep changes focused and preserve the source-of-truth boundary.
+Campus facts and routing evidence belong in **[`data`](https://github.com/GapwiseHQ/data)**. Product behavior belongs in **[`gapwise`](https://github.com/GapwiseHQ/gapwise)**. Android-specific implementation belongs in **[`android`](https://github.com/GapwiseHQ/android)**. iOS-specific implementation belongs in **[`ios`](https://github.com/GapwiseHQ/ios)**. Public documentation belongs in **[`docs`](https://github.com/GapwiseHQ/docs)**. Keep changes focused and preserve the source-of-truth boundary.
 
 ---
 

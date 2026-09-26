@@ -1,6 +1,6 @@
 # Gapwise organization defaults
 
-This repository contains the public GitHub organization profile and shared community-health files for **Gapwise-for-UofT**.
+This repository contains the public GitHub organization profile and shared community-health files for **Gapwise**.
 
 Gapwise has one canonical web application in `gapwise`, with `data`, `android`, `ios`, `ai`, `docs`, `status`, and `cli` serving distinct responsibilities. This `.github` repository owns organization-wide metadata and defaults. `carleton` and `carleton-data` remain transitional reference repositories.
 
@@ -20,14 +20,14 @@ Repository-local files take precedence when a component needs more specific inst
 
 | Area | Canonical repository |
 | --- | --- |
-| Web/PWA product, deterministic student-day behavior, public API and SDK source | [`gapwise`](https://github.com/Gapwise-for-UofT/gapwise) |
-| Native Android client and Android device integration | [`android`](https://github.com/Gapwise-for-UofT/android) |
-| Native iOS client and Apple-platform integration | [`ios`](https://github.com/Gapwise-for-UofT/ios) |
-| AI/MCP delegation boundary | [`ai`](https://github.com/Gapwise-for-UofT/ai) |
-| Public campus facts, provenance and validation | [`data`](https://github.com/Gapwise-for-UofT/data) |
-| University integration scaffolding and validation | [`cli`](https://github.com/Gapwise-for-UofT/cli) |
-| Public developer documentation | [`docs`](https://github.com/Gapwise-for-UofT/docs) |
-| Independent service monitoring and incident communication | [`status`](https://github.com/Gapwise-for-UofT/status) |
+| Web/PWA product, deterministic student-day behavior, public API and SDK source | [`gapwise`](https://github.com/GapwiseHQ/gapwise) |
+| Native Android client and Android device integration | [`android`](https://github.com/GapwiseHQ/android) |
+| Native iOS client and Apple-platform integration | [`ios`](https://github.com/GapwiseHQ/ios) |
+| AI/MCP delegation boundary | [`ai`](https://github.com/GapwiseHQ/ai) |
+| Public campus facts, provenance and validation | [`data`](https://github.com/GapwiseHQ/data) |
+| University integration scaffolding and validation | [`cli`](https://github.com/GapwiseHQ/cli) |
+| Public developer documentation | [`docs`](https://github.com/GapwiseHQ/docs) |
+| Independent service monitoring and incident communication | [`status`](https://github.com/GapwiseHQ/status) |
 
 Timetable identity and web building maps cover UTM, UTSG, UTSC, and mixed-campus schedules. Reviewed pedestrian routing, entrances, campus places, the public API, and the published raw-data snapshot currently cover UTM; organization documentation must describe that specific boundary without presenting Gapwise as a UTM product.
 
